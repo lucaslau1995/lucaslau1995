@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websites about Protected Areas Issues</title>
+    <link rel="stylesheet" href="css/lucas.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<!--Created by Lucas, Lai Sing Lau | 301198475 @ 20210923-->
+<body>
+    <a id="btt" href="#" title="Back to top"><i class="fas fa-arrow-up"></i></a>
+    <section id="top">
+        <div id="topBar" class="container">
+            <a id="logo" href="#"><i class="fas fa-globe-americas"></i> Protected Areas</a>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html" title="My Profile">My Profile</a></li>
+                        <li><a href="#categories" title="Categories">Categories</a></li>
+                        <li><a href="#importance" title="Importances">Importances</a></li>
+                        <li><a href="#resources" title="Resources">Resources</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="mobileMenuBtn" onclick="mopen()"><i class="fa fa-bars"></i></div>
+            <div id="mobileMenu">
+                <div id="close" onclick="mclose()">X</div>
+                <div id="menuInner" onclick="mclose()">
+                    <ul>
+                        <li><a class="mMenu" href="../index.html" title="My Profile">My Profile</a></li>
+                        <li><a class="mMenu" href="#categories" title="Categories">Categories</a></li>
+                        <li><a class="mMenu" href="#importance" title="Importances">Importances</a></li>
+                        <li><a class="mMenu" href="#resources" title="Resources">Resources</a></li>
+                    </ul>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="bannerArea">
+        <div id ="pageInfo" class="container">
+            <div>
+                <h3>Websites about Protected Areas Issues</h3>
+                <p>A protected area is a clearly defined geographical space, recognised, dedicated and managed, through legal or other effective means, to achieve the long term conservation of nature with associated ecosystem services and cultural values.<br />(IUCN Definition 2008)</p>
+            </div>
+        </div>
+    </section>
+    <section id="contentArea">
+        <div class="container">
+            <div id="categories">
+                <h3 class="subTitle">Protected Area Categories</h3>
+                <p>IUCN protected area management categories classify protected areas according to their management objectives. The categories are recognised by international bodies such as the United Nations and by many national governments as the global standard for defining and recording protected areas and as such are increasingly being incorporated into government legislation.</p>
+                <div class="slideshow">
+                    <div class="slide">
+                        <img src="images/nature_reserve.jpg" alt="Nature Reserve Panorama">
+                        <div class="sliderCaption">Strict Nature Reserve</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/wilderness_area.jpg" alt="Serengeti plains Tanzania Africa wildebeest migration animals wildlife">
+                        <div class="sliderCaption">Wilderness Area</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/national_park.jpg" alt="Horseshoe Bend in the USA panorama">
+                        <div class="sliderCaption">National Park</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/natural_monument.jpg" alt="Inukshuk">
+                        <div class="sliderCaption">Natural Monument or Feature</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/habitat_species_management are.jpg" alt="Magellanic penguins heading out to sea for fishing">
+                        <div class="sliderCaption">Habitat/Species Management Area</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/protected_landscape_seascape.jpg" alt="Beautiful Boulders beach landscape">
+                        <div class="sliderCaption">Protected Landscape/ Seascape</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/protected_area_with_sustainable_use_of_natural_resources.jpg" alt="Aerial View On Pine Forest ">
+                        <div class="sliderCaption">Protected area with sustainable use of natural resources</div>
+                    </div>
+                    <a class="prev" href="javascript:changeSlide(-1);">&#10094;</a>
+                    <a class="next" href="javascript:changeSlide(1);">&#10095;</a>
+                </div>
+            </div>      
+            <div id="importance">
+                <h3 class="subTitle">Importances of Protected Area</h3>
+                <div class="imgBlog">
+                    <div class="imgContainer">
+                        <img src="images/water.jpg" alt="Clean Water" class="images">
+                        <div class="imgCaption">
+                            <p><span class="imgTitle">Clean Water</span><br />Some natural forests (especially tropical montane cloud forests) and wetland areas increase total water flow.</p>
+                        </div>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="images/food_security.jpg" alt="Food Security" class="images">
+                        <div class="imgCaption">
+                            <p><span class="imgTitle">Food Security</span><br />Protected areas conserve populations of wild species, pollinators, and crop wild relatives safeguarding species and populations vital for food security.</p>
+                        </div>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="images/health.jpg" alt="Health" class="images">
+                        <div class="imgCaption">
+                            <p><span class="imgTitle">Health</span><br />Protected areas contribute to health by protecting intact ecosystems and supplies of medicinal plants and genetic material for pharmaceuticals. </p>
+                        </div>
+                    </div>
+                    <div class="imgContainer">
+                        <img src="images/ecosystem.jpg" alt="Ecosystem stability" class="images">
+                        <div class="imgCaption">
+                            <p><span class="imgTitle">Ecosystem stability</span><br />Protected areas can play a role in helping reduce the occurrence and impacts of natural disasters.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+            <div id="resources">
+                <h3 class="subTitle">Resources for Protected Area</h3>
+                <div class="row">
+                    <div class="column"><span class="imgAlign"></span><img src="images/resources.jpg" alt="searching resources" style="width: 100%; vertical-align: middle;"></div>
+                    <div class="column">
+                        <ul class="tick">
+                            <li>
+                                <h4>IUCN WCPA Best Practice Guidelines for Protected Area Managers Series</h4>
+                                <p>IUCN WCPA has a proud tradition of proposing global guidelines to protected area practitioners.</p>
+                                <p><a href="https://www.iucn.org/theme/protected-areas/resources/iucn-wcpa-best-practice-guidelines-protected-area-managers-series" target="_blank" title="IUCN WCPA Best Practice Guidelines for Protected Area Managers Series">Click Here</a></p>
+                                <hr />
+                            </li>
+                            <li>
+                                <h4>IUCN WCPA Technical Note Series</h4>
+                                <p>Technical Note provides a summary of the publication in the IUCN WCPA Technical Series.</p>
+                                <p><a href="https://www.iucn.org/theme/protected-areas/resources/iucn-wcpa-technical-note-series" target="_blank" title="IUCN WCPA Technical Note Series">Click Here</a></p>
+                                <hr />
+                            </li>
+                            <li>
+                                <h4>IUCN WCPA Natural Solutions Briefings</h4>
+                                <p>The IUCN WCPA Natural Solutions Theme promotes and develops the potential for protected areas to deliver a range of ecosystem services.</p>
+                                <p><a href="https://www.iucn.org/theme/protected-areas/resources/iucn-wcpa-natural-solutions-briefings" target="_blank" title="IUCN WCPA Natural Solutions Briefings">Click Here</a></p>
+                                <hr />
+                            </li>
+                            <li>
+                                <h4>PARKS Journal</h4>
+                                <p>The International Journal of Protected Areas and Conservation is published by IUCN World Commission on Protected Areas (WCPA). It is published twice a year as an online, open-access and peer reviewed journal.</p>
+                                <p><a href="https://www.iucn.org/theme/protected-areas/resources/parks-journal" target="_blank" title="PARKS Journal">Click Here</a></p>
+                                <hr />
+                            </li>
+                            <li>
+                                <h4>IUCN Protected Area Publications</h4>
+                                <p>IUCN together with WCPA and other partners produces books and journal articles on topics related to protected areas.</p>
+                                <p><a href="https://www.iucn.org/theme/protected-areas/resources/iucn-protected-area-publications" target="_blank" title="IUCN Protected Area Publications">Click Here</a></p>
+                                <hr />
+                            </li>
+                            <li>
+                                <h4>Protected Planet Report</h4>
+                                <p>Protected Planet Reports are biennial landmark publications that assess the state of protected and conserved areas around the world.</p>
+                                <p><a href="https://www.iucn.org/theme/protected-areas/publications/protected-planet-report" target="_blank" title="Protected Planet Report">Click Here</a></p>
+                                <hr />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>              
+        </div>  
+    </section>
+    <footer>
+        <div id="footer" class="container">
+            <div class="row">
+                <div id="reference" class="column">
+                    <h3>References</h3>
+                    <p>Protected Area content: <a href="https://www.iucn.org/theme/protected-areas/about" title="IUCN Protected Areas">IUCN Protected Areas</a></p>
+                    <p>Stock Images: <a href="https://www.istockphoto.com/" title="iStock">iStock</a></p>
+                    <p>Fonts & Icon: <a href="https://fontawesome.com/" title="Font Awesome">Font Awesome</a></p>
+                </div>
+                <div id="assignment" class="column">
+                    <h3 class="">My assignments</h3>
+                    <p><a href="http://studentweb.cencol.ca/llau34/" title="COMP213 assignment 1">COMP213 Assignment 1</a></p>
+                    <p><a href="http://studentweb.cencol.ca/llau34/assignment2/assignment2.html" title="COMP213 assignment 2">COMP213 Assignment 2</a></p>
+                    <p><a href="http://studentweb.cencol.ca/llau34/assignment3/assignment3.html" title="COMP213 assignment 3">COMP213 Assignment 3</a></p>
+                    <p><a href="http://studentweb.cencol.ca/llau34/assignment4/assignment4.html" title="COMP213 assignment 4">COMP213 Assignment 4</a></p>
+                    <p><a href="http://studentweb.cencol.ca/llau34/term_project/home.html" title="COMP213 Term Project">COMP213 Term Project</a></p>
+                </div>
+            </div>
+            <div id="copyright">&copy;&emsp;Copyright Lucas Lau - COMP213 - Fall 2021 | COMP213 - Assignment 2</div>  
+        </div>
+    </footer>
+</body>
+<script src="js/lucas.js"></script>
+</html>

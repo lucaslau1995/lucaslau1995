@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Realty Company Inc.</title>
+    <link rel="stylesheet" href="css/lucas.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<!--Created by Lucas, Lai Sing Lau | 301198475 @ 20211125-->
+<body>
+    <a id="btt" href="#" title="Back to top"><i class="fas fa-arrow-up"></i></a>
+    <section id="top">
+        <div id="topBar" class="container">
+            <a id="logo" href="http://studentweb.cencol.ca/llau34/term_project/home.html" target="_blank" title="Home | Realty Company Inc."><img src="images/logo.jpg" alt="Realty Company Inc. logo" title="Realty Company Inc. logo" style="position: relative;"></a>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="home.html" title="Home">Home</a></li>
+                        <li class="dropdown">
+                            <a href="available_properties.html" title="Available Properties">Available Properties</a>
+                            <ul class="dropdownMenu">
+                                <li><a href="property_1.html" title="Property 1">Property 1</a></li>
+                                <li><a href="property_2.html" title="Property 2">Property 2</a></li>
+                                <li><a href="property_3.html" title="Property 3">Property 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" title="Contact">Contact</a></li>
+                        <li><a href="site_map.html" title="Site Map">Site Map</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="javascript:void(0);" id="mMenu" onclick="mobileMenu()"><i class="fa fa-bars"></i></a>
+            <div id="mobileMenu" style="display: none;">
+                <div id="close" onclick="mobileMenu()" ><i class="fas fa-times"></i></div>
+                <div id="menuInner" class="center" onclick="mobileMenu()">
+                    <ul>
+                        <li class="active"><a href="home.html" title="Home">Home</a></li>
+                        <li>
+                            <a href="available_properties.html" title="Available Properties">Available Properties</a>
+                            <ul>
+                                <li><a href="property_1.html" title="Property 1">Property 1</a></li>
+                                <li><a href="property_2.html" title="Property 2">Property 2</a></li>
+                                <li><a href="property_3.html" title="Property 3">Property 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" title="Contact">Contact</a></li>
+                        <li><a href="site_map.html" title="Site Map">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bannerArea">
+        <div id ="pageInfo" class="container"></div>
+    </section>
+    <section id="contentArea">
+        <div class="container">
+            <h2 class="subTitle">About Realty Company Inc.</h2>
+            <div class="row">
+                <div class="column">
+                    <img src="images/about.jpg" width="100%" alt="House planning for customer" title="House planning for customer">
+                </div>
+                <div class="column">
+                    <div>
+                        <p>Realty Company Inc. represents the region's finest properties with exceptional skills using the most innovative technologies currently available. Realty Company Inc. offers ultimate privacy and security, speed, and efficiency. Their years of full-time experience have given them a clear understanding of the mindset of home buyers and sellers and a thorough understanding of the regional marketplace.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="slogansbanner" class="center">
+                    <h3 id="slogans">Move to What Moves You</h3>
+                </div>
+            </div>
+            <h2 class="subTitle">Why Realty Company Inc.</h2>
+            <div class="row reverse">
+                <div class="column">
+                    <div>
+                        <h3>Amy</h3>
+                        <h3>Real Estate Agent</h3>
+                        <p>For more than 60 years, Amy provided long-term care and management of residential rental properties scattered across GTA region. Amy has built a reputation as specialists, surpassing our competitors in both experience and scope of services. Most of satisfied customers are more likely to get help with us.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="images/agent.jpg" width="100%" alt="Professional house agent" title="Professional house agent">
+                </div>
+            </div>
+        </div>  
+    </section>
+    <footer>
+        <div id="footer" class="container">
+            <div class="row">
+                <div id="reference" class="column">
+                    <h3>References</h3>
+                    <p>Stock Images: <a href="https://www.istockphoto.com/" title="iStock">iStock</a></p>
+                    <p>Property Details & Images: <a href="https://www.realtor.ca/" title="Realtor">Realtor</a></p>
+                    <p>Fonts & Icon: <a href="https://fontawesome.com/" title="Font Awesome" target="_blank">Font Awesome</a></p>
+                </div>
+                <div id="assignment" class="column">
+                    <h3 class="">My assignments</h3>
+                    <p><a href="http://studentweb.cencol.ca/llau34/" title="COMP213 assignment 1">COMP213 Assignment 1</a></p>
+                    <p><a href="http://studentweb.cencol.ca/llau34/assignment2/assignment2.html" title="COMP213 assignment 2">COMP213 Assignment 2</a></p><p><a href="http://studentweb.cencol.ca/llau34/assignment3/assignment3.html" title="COMP213 assignment 3">COMP213 Assignment 3</a></p>
+                    <p><a href="http://studentweb.cencol.ca/llau34/assignment4/assignment4.html" title="COMP213 assignment 4">COMP213 Assignment 4</a></p>
+                    <p><a href="http://studentweb.cencol.ca/llau34/term_project/home.html" title="COMP213 Term Project">COMP213 Term Project</a></p>
+                </div>
+            </div>
+            <div id="copyright">&copy;&emsp;Copyright Lucas Lau - COMP213 - Fall 2021 | COMP213 - Term Project</div>  
+        </div>
+    </footer>
+</body>
+<script src="js/lucas.js"></script>
+</html>

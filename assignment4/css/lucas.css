@@ -1,0 +1,227 @@
+* {
+    font-family: sans-serif, Verdana;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #d3dd38;
+    color: #555455;
+    margin: 0 auto;
+    width: 100%;
+}
+section, footer {
+    margin: 0;
+    padding: 0;
+}
+div {
+    margin: 30px 0;
+}
+p {
+    font-size: 1.2em;
+    line-height: 2em;
+    padding: 0 10px;
+    margin: 0 10px;;
+}
+h1, h2, h3 {
+    padding: 15px 10px;
+    margin: 0 10px;
+    color: #555455;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover {
+    text-decoration: underline;
+}
+li {
+    padding: 20px 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.column {
+    width: 45%;
+}
+@media only screen and (max-width: 750px) {
+    .column {
+        width: 100%;
+    }   
+}
+#banner {
+    background-image: url("../images/centennial.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 25vh 0;
+    margin: 0;
+}
+#logo img {
+    max-width: 250px;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+/*Content*/
+.content {
+    background-color: #ffffff;
+    border: 2px solid #555455;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px #666666;
+    margin: 30px 10px;
+}
+.formInfo h1 {
+    text-align: center;
+    font-size: 2em;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+.formInfo h2 {
+    text-align: center;
+}
+.formSection {
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+form hr {
+    border-top: 1px solid #d3dd38;
+    margin: auto 15px auto -25px; 
+}
+.QSet {
+    display: table;
+    float: none;
+    width: 100%;
+}
+.half {
+    float: left;
+    width: 45%;
+}
+li.half {
+    padding-right: 30px;
+}
+@media only screen and (max-width: 750px) {
+    .QSet, .half {
+        width: 82%;
+    }
+    li.half {
+        padding: 20px 0;
+    }
+}
+.formQ {
+    display: table-header-group;
+    transition: all 0.3s ease;
+}
+input[type="radio"]  {
+    display: none;
+}
+.radioC {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 20px;
+    background-color: #dddddd;
+}
+.QSet .radioC:first-of-type {
+    border-radius: 15px 0 0 15px;
+}
+.QSet .radioC.last {
+    border-radius: 0 15px 15px 0;
+}
+.QSet .radioC::after {
+    content: "|";
+    position: relative;
+    background-color: #555455;
+    font-size: 0.7em;
+    left: 22px;
+    font-weight: 100;
+}
+.QSet .radioC.last::after {
+    content: "";
+}
+input[type=radio]:checked + .radioC{
+    color: #555455;
+    background-color: #d3dd38;
+  }
+input, textarea {
+    width: 90%;
+    border: 1px solid #555455;
+    border-radius: 5px;
+    padding: 1em;
+    display: table-row-group;
+}
+textarea {
+    resize: none;
+}
+input:focus, textarea:focus {
+    outline: 2px solid #d3dd38;
+    transition: all 0.3s ease;
+}
+.QSet input:focus ~ .formQ,.QSet .radioC:focus ~ .formQ, .QSet textarea:focus ~ .formQ {
+    color: #d3dd38;
+}
+.formBtn {
+    text-align: center;
+}
+.formBtn button {
+    width: 80px;
+    padding: 10px 5px;
+    font-size: 1.1em;
+    color: #555455;
+    border: none;
+    border-radius: 15px;
+    box-shadow: #555455 0 15px 30px -5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.formSubmit {
+    background-image: linear-gradient(144deg, #d3dd38, #e3ee4f 50%,#555455);
+}
+.formSubmit:active {
+    background-image: linear-gradient(144deg, #555455, #e3ee4f 50%,#d3dd38);
+}
+.formReset {
+    background-color: #b9b9b9;
+}
+.formReset:active {
+    background-color: #000000;
+}
+.content.i, .content.i div {
+    text-align: center;
+    font-style: italic;
+    margin: 0 10px;
+    padding: 10px 0;
+}
+.content a {
+    color: #555455;
+    word-break: break-all;
+}
+
+/*Footer*/
+footer {
+    background-color: #555455;
+    font-size: 0.8em;
+    color: #ffffff;
+}
+footer h3 {
+    color: #ffffff;
+}
+#reference ol {
+    font-size: 0.8em;
+}
+#copyright {
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: italic;
+    padding: 2em 0;
+    margin: 0;
+    text-align: center;
+}

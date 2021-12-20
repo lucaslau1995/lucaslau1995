@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel 5, Details - Google Store</title>
+    <link rel="stylesheet" href="css/lucas.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<!--Created by Lucas, Lai Sing Lau | 301198475 @ 20211007-->
+<body>
+    <a id="btt" href="#" title="Back to top"><i class="fas fa-arrow-up"></i></a>
+    <section id="top">
+        <div id="topBar" class="container">
+            <a id="logo" href="https://store.google.com/" target="_blank" title="Google Store"><img src="images/logo.png" alt="Google logo" title="Google logo" style="width: 30px; top: 7px; position: relative;">&nbsp;Google Store</a>
+            <div id="menu" class="tabs">
+                <nav>
+                    <ul>
+                        <li class="tab" value="productInfo">Product Info</li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="javascript:void(0);" id="mMenu"><i class="fa fa-bars"></i></a>
+        </div>
+    </section>
+    <section id="contentArea">
+        <div class="container">
+            <div id="productGallery" class="">
+                <div class="silderContainer vcenter">
+                    <a class="prev" href="javascript:void(0);">&#10094;</a>
+                    <img id="productSlider" src="" alt="Pixel 5 - product detail">
+                    <a class="next" href="javascript:void(0);">&#10095;</a>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <footer>
+        <div id="footer" class="container">
+            <div class="row">
+                <div id="reference" class="column">
+                    <h3>References</h3>
+                    <p>Stock Images: <a href="https://store.google.com/" title="iStock" target="_blank">Google Store</a></p>
+                    <p>Fonts & Icon: <a href="https://fontawesome.com/" title="Font Awesome" target="_blank">Font Awesome</a></p>
+                </div>
+                <div id="assignment" class="column">
+                    <h3 class="">My assignments</h3>
+                    <p><a href="http://studentweb.cencol.ca/llau34/" title="COMP213 assignment 1">COMP213 Assignment 1</a></p>
+                    <p><a href="http://studentweb.cencol.ca/llau34/assignment2/assignment2.html" title="COMP213 assignment 2">COMP213 Assignment 2</a></p>
+                    <p><a href="http://studentweb.cencol.ca/llau34/assignment3/assignment3.html" title="COMP213 assignment 3">COMP213 Assignment 3</a></p>
+                    <p><a href="http://studentweb.cencol.ca/llau34/assignment4/assignment4.html" title="COMP213 assignment 4">COMP213 Assignment 4</a></p>
+                    <p><a href="http://studentweb.cencol.ca/llau34/term_project/home.html" title="COMP213 Term Project">COMP213 Term Project</a></p>
+                </div>
+            </div>
+            <div id="copyright">&copy;&emsp;Copyright Lucas Lau - COMP213 - Fall 2021 | COMP213 - Assignment 3</div>  
+        </div>
+    </footer>
+</body>
+<script src="js/lucas.js"></script>
+<script>
+    $(document).ready(function() {
+        var params = new URLSearchParams(window.location.search)
+        params.has("images");
+        var image = params.get("images")
+        console.log(image);
+        $("#productSlider").attr("src", "images/" + image);
+    })
+</script>
+</html>

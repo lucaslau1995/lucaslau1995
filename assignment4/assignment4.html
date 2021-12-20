@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuing Education Course and Instructor Evaluation Form | Centennial College</title>
+    <link rel="stylesheet" href="css/lucas.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<!--Created by Lucas, Lai Sing Lau | 301198475 @ 20211111-->
+<body>
+    <header>
+        <section id="top">
+            <div id="banner">
+                <a id="logo" href="https://www.centennialcollege.ca/" target="_blank" title="Centennial College"><img src="images/logo.jpeg" alt="Centennial College" title="Centennial College"></a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="contentArea">
+            <div class="container">
+                <div class="content">
+                    <div class="formInfo">
+                        <h1>Centennial College</h1>
+                        <h2>Countinuing Education Course / Instructor Evaluation</h2>
+                        <p>Please read each statement carefully and consider each one individually. Please select your choice. Give only <b>one answer</b> for each question.</p>
+                    </div>
+                    <form action="mailto:llau34@my.centennialcollege.ca">
+                        <p class="QSet half">
+                            <input type="text" name="txtCourse" tabindex="1" required>
+                            <label class="formQ" for="txtCourse">Course Name / Code: </label>
+                        </p>
+                        <p class="QSet half">
+                            <input id="Q2_1" type="radio" name="optSem" value="Fall" required>
+                            <label for="Q2_1" class="radioC" tabindex="3">Fall</label>
+                            <input id="Q2_2" type="radio" name="optSem" value="Winter">
+                            <label for="Q2_2" class="radioC" tabindex="5">Winter</label>
+                            <input id="Q2_3" type="radio" name="optSem" value="Spring/Summer">
+                            <label for="Q2_3" class="radioC last" tabindex="7">Spring/Summer</label>
+                            <label class="formQ" for="optSem">Semester: </label>
+                        </p>
+                        <p class="QSet half">
+                            <input type="number" name="Year" tabindex="9" value="2021" min="1966" max="2021" required>
+                            <label class="formQ" for="Year">Year: </label>
+                        </p>
+                        <p class="QSet half" style="margin-bottom: 30px;">
+                            <input type="text" name="txtInstructor" tabindex="11" required>
+                            <label class="formQ" for="txtInstructor">Instructor: </label>
+                        </p>
+                        <ol>
+                            <h2 class="formSection"><i class="fas fa-chalkboard-teacher"></i>&emsp;Instructor</h2>
+                            <hr>
+                            <p>How would you rate the instructor's?</p>
+                            <li>
+                                <p class="QSet">
+                                    <input id="Q3_1" type="radio" name="optKnow" value="Excellent">
+                                    <label for="Q3_1" class="radioC" tabindex="13">Excellent</label>
+                                    <input id="Q3_2" type="radio" name="optKnow" value="Good">
+                                    <label for="Q3_2" class="radioC" tabindex="15">Good</label>
+                                    <input id="Q3_3" type="radio" name="optKnow" value="Fair">
+                                    <label for="Q3_3" class="radioC" tabindex="17">Fair</label>
+                                    <input id="Q3_4" type="radio" name="optKnow" value="NS">
+                                    <label for="Q3_4" class="radioC last" tabindex="19">Not Satisfactory</label>
+                                    <label class="formQ" class="question" for="optKnow"><b>Knowledge</b> of subject?</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="QSet">
+                                    <input id="Q4_1" type="radio" name="optHelp" value="Excellent">
+                                    <label for="Q4_1" class="radioC" tabindex="21">Excellent</label>
+                                    <input id="Q4_2" type="radio" name="optHelp" value="Good">
+                                    <label for="Q4_2" class="radioC" tabindex="23">Good</label>
+                                    <input id="Q4_3" type="radio" name="optHelp" value="Fair">
+                                    <label for="Q4_3" class="radioC" tabindex="25">Fair</label>
+                                    <input id="Q4_4" type="radio" name="optHelp" value="NS">
+                                    <label for="Q4_4" class="radioC last" tabindex="27">Not Satisfactory</label>
+                                    <label class="formQ" for="optHelp"><b>Helpfulness</b>?</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="QSet">
+                                    <input id="Q5_1" type="radio" name="optCR" value="Excellent">
+                                    <label for="Q5_1" class="radioC" tabindex="29">Excellent</label>
+                                    <input id="Q5_2" type="radio" name="optCR" value="Good">
+                                    <label for="Q5_2" class="radioC" tabindex="31">Good</label>
+                                    <input id="Q5_3" type="radio" name="optCR" value="Fair">
+                                    <label for="Q5_3" class="radioC" tabindex="33">Fair</label>
+                                    <input id="Q5_4" type="radio" name="optCR" value="NS">
+                                    <label for="Q5_4" class="radioC last" tabindex="35">Not Satisfactory</label>
+                                    <label class="formQ" for="optCR"><b>Courtesy and respect</b> for all students?</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="QSet">
+                                    <input id="Q6_1" type="radio" name="optComm" value="Excellent">
+                                    <label for="Q6_1" class="radioC" tabindex="37">Excellent</label>
+                                    <input id="Q6_2" type="radio" name="optComm" value="Good">
+                                    <label for="Q6_2" class="radioC" tabindex="39">Good</label>
+                                    <input id="Q6_3" type="radio" name="optComm" value="Fair">
+                                    <label for="Q6_3" class="radioC" tabindex="41">Fair</label>
+                                    <input id="Q6_4" type="radio" name="optComm" value="NS">
+                                    <label for="Q6_4" class="radioC last" tabindex="43">Not Satisfactory</label>
+                                    <label class="formQ" for="optComm"><b>Communication</b> skills?</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="QSet">
+                                    <input id="Q7_1" type="radio" name="optPerformance" value="Excellent">
+                                    <label for="Q7_1" class="radioC" tabindex="45">Excellent</label>
+                                    <input id="Q7_2" type="radio" name="optPerformance" value="Good">
+                                    <label for="Q7_2" class="radioC" tabindex="47">Good</label>
+                                    <input id="Q7_3" type="radio" name="optPerformance" value="Fair">
+                                    <label for="Q7_3" class="radioC" tabindex="49">Fair</label>
+                                    <input id="Q7_4" type="radio" name="optPerformance" value="NS">
+                                    <label for="Q7_4" class="radioC last" tabindex="51">Not Satisfactory</label>
+                                    <label class="formQ" for="optPerformance">Overall <b>performance</b>?</label>
+                                </p>
+                            </li>
+                            <h2 class="formSection"><i class="fas fa-book"></i>&emsp;Course</h2>
+                            <hr>
+                            <li>
+                                <p class="QSet">
+                                    <input id="Q8_1" type="radio" name="optMaterials" value="Excellent">
+                                    <label for="Q8_1" class="radioC" tabindex="53">Excellent</label>
+                                    <input id="Q8_2" type="radio" name="optMaterials" value="Good">
+                                    <label for="Q8_2" class="radioC" tabindex="55">Good</label>
+                                    <input id="Q8_3" type="radio" name="optMaterials" value="Fair">
+                                    <label for="Q8_3" class="radioC" tabindex="57">Fair</label>
+                                    <input id="Q8_4" type="radio" name="optMaterials" value="NS">
+                                    <label for="Q8_4" class="radioC last" tabindex="59">Not Satisfactory</label>
+                                    <label class="formQ" for="optMaterials">How would you rate the <b>course materials</b>?</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="QSet">
+                                    <input id="Q9_1" type="radio" name="optExpect" value="Excellent">
+                                    <label for="Q9_1" class="radioC" tabindex="61">Excellent</label>
+                                    <input id="Q9_2" type="radio" name="optExpect" value="Good">
+                                    <label for="Q9_2" class="radioC" tabindex="63">Good</label>
+                                    <input id="Q9_3" type="radio" name="optExpect" value="Fair">
+                                    <label for="Q9_3" class="radioC" tabindex="65">Fair</label>
+                                    <input id="Q9_4" type="radio" name="optExpect" value="NS">
+                                    <label for="Q9_4" class="radioC last" tabindex="67">Not Satisfactory</label>
+                                    <label class="formQ" for="optExpect">How much did this course meet your <b>expectations</b>?</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="QSet">
+                                    <input id="Q10_1" type="radio" name="optOverall" value="Excellent">
+                                    <label for="Q10_1" class="radioC" tabindex="69">Excellent</label>
+                                    <input id="Q10_2" type="radio" name="optOverall" value="Good">
+                                    <label for="Q10_2" class="radioC" tabindex="71">Good</label>
+                                    <input id="Q10_3" type="radio" name="optOverall" value="Fair">
+                                    <label for="Q10_3" class="radioC" tabindex="73">Fair</label>
+                                    <input id="Q10_4" type="radio" name="optOverall" value="NS">
+                                    <label for="Q10_4" class="radioC last" tabindex="75">Not Satisfactory</label>
+                                    <label class="formQ" for="optOverall">How would you rate this course (<b>overall</b>)?</label>
+                                </p>
+                            </li>
+                            <h2 class="formSection"><i class="fas fa-info-circle"></i>&emsp;General Information</h2>
+                            <hr>
+                            <li>
+                                <p class="QSet">
+                                    <input id="Q11_1" type="radio" name="optCO" value="Yes">
+                                    <label for="Q11_1" class="radioC" tabindex="77">Yes</label>
+                                    <input id="Q11_2" type="radio" name="optCO" value="No">
+                                    <label for="Q11_2" class="radioC" tabindex="79">No</label>
+                                    <input id="Q11_3" type="radio" name="optCO" value="Not Sure">
+                                    <label for="Q11_3" class="radioC last" tabindex="81">Not Sure</label>
+                                    <label class="formQ" for="optCO">Was the <b>course outline</b> reviewed/explained at the beginning of your course?</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="QSet">
+                                    <input id="Q12_1" type="radio" name="optRe" value="Yes">
+                                    <label for="Q12_1" class="radioC" tabindex="83">Yes</label>
+                                    <input id="Q12_2" type="radio" name="optRe" value="No">
+                                    <label for="Q12_2" class="radioC" tabindex="85">No</label>
+                                    <input id="Q12_3" type="radio" name="optRe" value="Not Sure">
+                                    <label for="Q12_3" class="radioC last" tabindex="87">Not Sure</label>
+                                    <label class="formQ" for="optRe">Would you <b>recommend</b> this course to a friend with the same interests?</label>
+                                </p>
+                            </li>
+                            <h2 class="formSection"><i class="fas fa-comment"></i>&emsp;Any Other Comments</h2>
+                            <hr>
+                            <li class="half">
+                                <p class="QSet">
+                                    <textarea name="txtBest" rows="7" tabindex="89"></textarea>
+                                    <label class="formQ" for="txtBest">What is the <b>best thing</b> about this course?</label>
+                                </p>
+                            </li>
+                            <li class="half">
+                                <p class="QSet">
+                                    <textarea name="txtImprove" rows="7" tabindex="91"></textarea>
+                                    <label class="formQ" for="txtImprove">How could we <b>improve</b> this course?</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="QSet">
+                                    <textarea name="txtOther" rows="7" tabindex="93"></textarea>
+                                    <label class="formQ" for="txtOther">Other:</label>
+                                </p>
+                            </li>
+                        </ol>
+                        <div class="formBtn">
+                            <button class="formSubmit" type="submit" value="Submit">Submit</button>
+                            <button class="formReset" type="reset" value="Reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="content i">
+                    <p>Thank you! We pay attention to your feedback!</p>
+                    <div class="row">
+                        <div class="column"><p>Web: <a href="http://www.centennialcollege.ca/continuing_education" target="_blank">www.centennialcollege.ca/continuing_education</a></p></div>
+                        <div class="column"><p>Email: <a href="mailto:continuingeducation@centennialcollege.ca" target="_blank">continuingeducation@centennialcollege.ca</a></p></div>
+                    </div>
+                    </p>
+                </div>
+            </div>  
+        </section>
+    </main>
+    <footer>
+        <div id="footer" class="container">
+            <div class="row">
+                <div id="reference" class="column">
+                    <h3>References</h3>
+                    <p>Fonts & Icon: <a href="https://fontawesome.com/" title="Font Awesome" target="_blank">Font Awesome</a></p>
+                </div>
+                <div id="assignment" class="column">
+                    <h3 class="">My assignments</h3>
+                    <p><a href="http://studentweb.cencol.ca/llau34/" title="COMP213 assignment 1">COMP213 Assignment 1</a></p>
+                    <p><a href="http://studentweb.cencol.ca/llau34/assignment2/assignment2.html" title="COMP213 assignment 2">COMP213 Assignment 2</a></p><p><a href="http://studentweb.cencol.ca/llau34/assignment3/assignment3.html" title="COMP213 assignment 3">COMP213 Assignment 3</a></p>
+                    <p><a href="http://studentweb.cencol.ca/llau34/assignment4/assignment4.html" title="COMP213 assignment 4">COMP213 Assignment 4</a></p>
+                    <p><a href="http://studentweb.cencol.ca/llau34/term_project/home.html" title="COMP213 Term Project">COMP213 Term Project</a></p>
+                </div>
+            </div>
+            <div id="copyright">&copy;&emsp;Copyright Lucas Lau - COMP213 - Fall 2021 | COMP213 - Assignment 4</div>  
+        </div>
+    </footer>
+</body>
+</html>
